@@ -1,0 +1,2229 @@
+[
+  {
+    "series": "CH32V003",
+    "chips": [
+      {
+        "name": "CH32V003F4P",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V003F4U",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V003A4M",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V003J4M",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2A",
+        "march": "rv32ec_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH641",
+    "chips": [
+      {
+        "name": "CH641D",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH641F",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH641P",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH641X",
+        "flash": "16K",
+        "sram": "2K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2A",
+        "march": "rv32ec_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V002",
+    "chips": [
+      {
+        "name": "CH32V002F4P",
+        "flash": "16K",
+        "sram": "4K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V002F4U",
+        "flash": "16K",
+        "sram": "4K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V002A4M",
+        "flash": "16K",
+        "sram": "4K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V002D4U",
+        "flash": "16K",
+        "sram": "4K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V002J4M",
+        "flash": "16K",
+        "sram": "4K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2C",
+        "march": "rv32ec_zmmul_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "zmmul",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V004",
+    "chips": [
+      {
+        "name": "CH32V004F6U",
+        "flash": "32K",
+        "sram": "6K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V004F6P",
+        "flash": "32K",
+        "sram": "6K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2C",
+        "march": "rv32ec_zmmul_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "zmmul",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V005",
+    "chips": [
+      {
+        "name": "CH32V005E6R",
+        "flash": "32K",
+        "sram": "6K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V005F6U",
+        "flash": "32K",
+        "sram": "6K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V005F6P",
+        "flash": "32K",
+        "sram": "6K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V005D6U",
+        "flash": "32K",
+        "sram": "6K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2C",
+        "march": "rv32ec_zmmul_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "zmmul",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V006",
+    "chips": [
+      {
+        "name": "CH32V006K8U",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V006E8R",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V006F8U",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V006F8P",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V006F4U",
+        "flash": "16K",
+        "sram": "4K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V006D8U",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2C",
+        "march": "rv32ec_zmmul_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "zmmul",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V007",
+    "chips": [
+      {
+        "name": "CH32V007K8U",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V007E8R",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2C",
+        "march": "rv32ec_zmmul_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "zmmul",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32M007",
+    "chips": [
+      {
+        "name": "CH32M007E8R",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32M007E8U",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32M007K8U",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32M007G8R",
+        "flash": "62K",
+        "sram": "8K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV2C",
+        "march": "rv32ec_zmmul_xw",
+        "mabi": [
+          "ilp32e"
+        ],
+        "isa_ext": [
+          "e",
+          "c",
+          "zmmul",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V103",
+    "chips": [
+      {
+        "name": "CH32V103R8T",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V103C8U",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V103C8T",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V103C6T",
+        "flash": "32K",
+        "sram": "10K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3A",
+        "march": "rv32imac",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH569",
+    "chips": [
+      {
+        "name": "CH565M",
+        "flash": "448K",
+        "sram": "16K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH565W",
+        "flash": "448K",
+        "sram": "16K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH569W",
+        "flash": "448K",
+        "sram": "16K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3A",
+        "march": "rv32imac",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH571",
+    "chips": [
+      {
+        "name": "CH571D",
+        "flash": "192K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH571F",
+        "flash": "192K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH571K",
+        "flash": "192K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH571R",
+        "flash": "192K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3A",
+        "march": "rv32imac",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH573",
+    "chips": [
+      {
+        "name": "CH573F",
+        "flash": "448K",
+        "sram": "18K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH573Q",
+        "flash": "448K",
+        "sram": "18K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH573X",
+        "flash": "448K",
+        "sram": "18K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3A",
+        "march": "rv32imac",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32M030",
+    "chips": [
+      {
+        "name": "CH32M030C8T",
+        "flash": "64K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32M030C8U",
+        "flash": "64K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32M030C9U",
+        "flash": "64K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32M030K8U",
+        "flash": "64K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32M030G8U",
+        "flash": "64K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3B",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V205",
+    "chips": [
+      {
+        "name": "CH32V205VCT",
+        "flash": "256K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V205RCT",
+        "flash": "256K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V205CCT",
+        "flash": "256K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3B",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH570",
+    "chips": [
+      {
+        "name": "CH570D",
+        "flash": "240K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH570E",
+        "flash": "240K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH570Q",
+        "flash": "240K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3C",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH572",
+    "chips": [
+      {
+        "name": "CH572D",
+        "flash": "240K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH572Q",
+        "flash": "240K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH572R",
+        "flash": "240K",
+        "sram": "12K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3C",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH585",
+    "chips": [
+      {
+        "name": "CH581M",
+        "flash": "448K",
+        "sram": "96K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH584F",
+        "flash": "448K",
+        "sram": "96K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH584M",
+        "flash": "448K",
+        "sram": "96K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH584X",
+        "flash": "480K",
+        "sram": "96K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH585C",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH585D",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH585F",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH585M",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3C",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH587",
+    "chips": [
+      {
+        "name": "CH586W",
+        "flash": "960K",
+        "sram": "256K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH586M",
+        "flash": "448K",
+        "sram": "256K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH587D",
+        "flash": "448K",
+        "sram": "256K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH587F",
+        "flash": "448K",
+        "sram": "256K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH587M",
+        "flash": "448K",
+        "sram": "256K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH587W",
+        "flash": "960K",
+        "sram": "256K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3C",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH592",
+    "chips": [
+      {
+        "name": "CH591D",
+        "flash": "192K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH591F",
+        "flash": "192K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH591R",
+        "flash": "192K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592D",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592F",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592X",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592A",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3C",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH595",
+    "chips": [
+      {
+        "name": "CH595D",
+        "flash": "240K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH595F",
+        "flash": "240K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH595X",
+        "flash": "240K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3C",
+        "march": "rv32imc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32X315",
+    "chips": [
+      {
+        "name": "CH32X305RCT",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32X315CCU",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32X315MCU",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32X315WCU",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3F",
+        "march": "rv32imafc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32H417",
+    "chips": [
+      {
+        "name": "CH32H415REU",
+        "flash": "960K",
+        "sram": "896K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32H416RDU",
+        "flash": "480K",
+        "sram": "896K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32H417QEU",
+        "flash": "960K",
+        "sram": "896K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32H417MEU",
+        "flash": "960K",
+        "sram": "896K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32H417WEU",
+        "flash": "960K",
+        "sram": "896K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3F",
+        "march": "rv32imafc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      },
+      {
+        "core": "QingKeV5F",
+        "march": "rv32imafc_zba_zbb_zbc_zbs_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V4X7",
+    "chips": [
+      {
+        "name": "CH32V407VET",
+        "flash": "576K",
+        "sram": "200K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V407WEU",
+        "flash": "576K",
+        "sram": "200K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V407RET",
+        "flash": "576K",
+        "sram": "200K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V467VET",
+        "flash": "576K",
+        "sram": "200K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V467WEU",
+        "flash": "576K",
+        "sram": "200K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V467RET",
+        "flash": "576K",
+        "sram": "200K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV3V",
+        "march": "rv32imac_zba_zbb_zbc_zbs_zve64x_zvl64b_zvbb_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "zba",
+          "zbb",
+          "zbc",
+          "zbs",
+          "zve64x",
+          "zvl64b",
+          "zvbb",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH583",
+    "chips": [
+      {
+        "name": "CH582F",
+        "flash": "448K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH582M",
+        "flash": "448K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH583M",
+        "flash": "448K",
+        "sram": "32K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4A",
+        "march": "rv32imac",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V203",
+    "chips": [
+      {
+        "name": "CH32V203CCT",
+        "flash": "256K",
+        "sram": "32K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH32V203RBT",
+        "flash": "256K",
+        "sram": "64K",
+        "startfile": [
+          "startup_ch32v20x_D8.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203C8U",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203C8T",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203K8U",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203K8T",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203G8R",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203F8U",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203F8P",
+        "flash": "224K",
+        "sram": "20K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203C6U",
+        "flash": "224K",
+        "sram": "10K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203C6T",
+        "flash": "224K",
+        "sram": "10K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203G6U",
+        "flash": "224K",
+        "sram": "10K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V203F6P",
+        "flash": "224K",
+        "sram": "10K",
+        "startfile": [
+          "startup_ch32v20x_D6.S"
+        ],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4B",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32X035",
+    "chips": [
+      {
+        "name": "CH32X033F8P",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035C8T",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035D8U",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035F7P",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035F8U",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035G8R",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035G8U",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32X035R8T",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4C",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32L103",
+    "chips": [
+      {
+        "name": "CH32L103F8P",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32L103F8U",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32L103G8R",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32L103K8U",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32L103C8T",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4C",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32M103",
+    "chips": [
+      {
+        "name": "CH32M103G8R",
+        "flash": "64K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4C",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH643",
+    "chips": [
+      {
+        "name": "CH643L",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH643Q",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH643U",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH643W",
+        "flash": "62K",
+        "sram": "20K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4C",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V208",
+    "chips": [
+      {
+        "name": "CH32V208WBU",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [
+          "startup_ch32v20x_D8W.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V208RBT",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [
+          "startup_ch32v20x_D8W.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V208CBU",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [
+          "startup_ch32v20x_D8W.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V208GBU",
+        "flash": "480K",
+        "sram": "64K",
+        "startfile": [
+          "startup_ch32v20x_D8W.S"
+        ],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4C",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH592",
+    "chips": [
+      {
+        "name": "CH591D",
+        "flash": "192K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH591F",
+        "flash": "192K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH591R",
+        "flash": "192K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592D",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592F",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592X",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH592A",
+        "flash": "448K",
+        "sram": "26K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4C",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V303",
+    "chips": [
+      {
+        "name": "CH32V303VCT",
+        "flash": "480K",
+        "sram": "128K",
+        "startfile": [
+          "startup_ch32v30x_D8.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V303RCT",
+        "flash": "480K",
+        "sram": "128K",
+        "startfile": [
+          "startup_ch32v30x_D8.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V303RBT",
+        "flash": "480K",
+        "sram": "32K",
+        "startfile": [
+          "startup_ch32v30x_D8.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V303CBT",
+        "flash": "480K",
+        "sram": "32K",
+        "startfile": [
+          "startup_ch32v30x_D8.S"
+        ],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4F",
+        "march": "rv32imafc_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V305",
+    "chips": [
+      {
+        "name": "CH32V305RBT",
+        "flash": "480K",
+        "sram": "32K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V305CCT",
+        "flash": "480K",
+        "sram": "128K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V305GBU",
+        "flash": "480K",
+        "sram": "32K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V305FBP",
+        "flash": "480K",
+        "sram": "32K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4F",
+        "march": "rv32imafc_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V307",
+    "chips": [
+      {
+        "name": "CH32V307VCT",
+        "flash": "480K",
+        "sram": "128K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V307WCU",
+        "flash": "480K",
+        "sram": "128K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V307RCT",
+        "flash": "480K",
+        "sram": "128K",
+        "startfile": [
+          "startup_ch32v30x_D8C.S"
+        ],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4F",
+        "march": "rv32imafc_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH32V317",
+    "chips": [
+      {
+        "name": "CH32V317VCT",
+        "flash": "480K",
+        "sram": "192K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V317WCU",
+        "flash": "480K",
+        "sram": "192K",
+        "startfile": [],
+        "maxbreakpoint": []
+      },
+      {
+        "name": "CH32V317TCU",
+        "flash": "480K",
+        "sram": "192K",
+        "startfile": [],
+        "maxbreakpoint": []
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4F",
+        "march": "rv32imafc_xw",
+        "mabi": [
+          "ilp32f",
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "f",
+          "xw"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "CH564",
+    "chips": [
+      {
+        "name": "CH564L",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH564Q",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH564F",
+        "flash": "448K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      },
+      {
+        "name": "CH564C",
+        "flash": "192K",
+        "sram": "128K",
+        "startfile": [],
+        "maxbreakpoint": [
+          4
+        ]
+      }
+    ],
+    "toolchain": [
+      "GCC8",
+      "GCC12",
+      "GCC15"
+    ],
+    "cores": [
+      {
+        "core": "QingKeV4J",
+        "march": "rv32imac_xw",
+        "mabi": [
+          "ilp32"
+        ],
+        "isa_ext": [
+          "i",
+          "m",
+          "a",
+          "c",
+          "xw"
+        ]
+      }
+    ]
+  }
+]

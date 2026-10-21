@@ -1,0 +1,10 @@
+* text=auto
+
+# Windows-facing scripts
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+
+# The mirrored MRS3 payload is hash-baselined and must stay byte-exact on every
+# platform: no end-of-line conversion, no encoding normalization. This rule is
+# deliberately last so it wins over the *.ps1 / *.cmd rules above.
+references/mrs3/** -text

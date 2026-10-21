@@ -1,0 +1,779 @@
+{
+ "meta": {
+  "v003_macros": 2073,
+  "target_macros": 2292,
+  "v003_funcs": 346,
+  "target_funcs": 372
+ },
+ "macro_rename_map": {
+  "RCC_APB2Periph": "RCC_PB2Periph",
+  "RCC_APB1Periph": "RCC_PB1Periph",
+  "RCC_AHBPeriph": "RCC_HBPeriph",
+  "APB2PERIPH_BASE": "PB2PERIPH_BASE",
+  "APB1PERIPH_BASE": "PB1PERIPH_BASE",
+  "AHBPERIPH_BASE": "HBPERIPH_BASE"
+ },
+ "func_rename_map": {
+  "RCC_APB2PeriphClockCmd": "RCC_PB2PeriphClockCmd",
+  "RCC_APB2PeriphResetCmd": "RCC_PB2PeriphResetCmd",
+  "RCC_APB1PeriphClockCmd": "RCC_PB1PeriphClockCmd",
+  "RCC_APB1PeriphResetCmd": "RCC_PB1PeriphResetCmd",
+  "RCC_AHBPeriphClockCmd": "RCC_HBPeriphClockCmd",
+  "FLASH_ReadOutProtection": "FLASH_EnableReadOutProtection",
+  "EXC_IRQn": "HardFault_IRQn",
+  "SysTicK_IRQn": "SysTick_IRQn"
+ },
+ "reg_member_rename_map": {
+  "APB2PCENR": "PB2PCENR",
+  "APB1PCENR": "PB1PCENR",
+  "AHBPCENR": "HBPCENR"
+ },
+ "only_v003_macros": [
+  "ADC_CAL",
+  "ADC_CALVOLSELECT",
+  "ADC_CALVOLSELECT_0",
+  "ADC_CALVOLSELECT_1",
+  "ADC_CALVOL_50PERCENT",
+  "ADC_CALVOL_75PERCENT",
+  "ADC_Channel_Vcalint",
+  "ADC_DLYR_DLYSRC",
+  "ADC_DLYR_DLYVLU",
+  "ADC_ExternalTrigConv_Ext_PD3_PC2",
+  "ADC_ExternalTrigInjecConv_Ext_PD1_PA2",
+  "ADC_ExternalTrigInjec_DLY",
+  "ADC_ExternalTrigRegul_DLY",
+  "ADC_RSTCAL",
+  "ADC_SMP10",
+  "ADC_SMP10_0",
+  "ADC_SMP10_1",
+  "ADC_SMP10_2",
+  "ADC_SMP11",
+  "ADC_SMP11_0",
+  "ADC_SMP11_1",
+  "ADC_SMP11_2",
+  "ADC_SMP12",
+  "ADC_SMP12_0",
+  "ADC_SMP12_1",
+  "ADC_SMP12_2",
+  "ADC_SMP13",
+  "ADC_SMP13_0",
+  "ADC_SMP13_1",
+  "ADC_SMP13_2",
+  "ADC_SMP14",
+  "ADC_SMP14_0",
+  "ADC_SMP14_1",
+  "ADC_SMP14_2",
+  "ADC_SMP15",
+  "ADC_SMP15_0",
+  "ADC_SMP15_1",
+  "ADC_SMP15_2",
+  "ADC_SampleTime_15Cycles",
+  "ADC_SampleTime_241Cycles",
+  "ADC_SampleTime_30Cycles",
+  "ADC_SampleTime_3Cycles",
+  "ADC_SampleTime_43Cycles",
+  "ADC_SampleTime_57Cycles",
+  "ADC_SampleTime_73Cycles",
+  "ADC_SampleTime_9Cycles",
+  "AFIO_PCFR1_ADC1_ETRGINJ_REMAP",
+  "AFIO_PCFR1_ADC1_ETRGREG_REMAP",
+  "AFIO_PCFR1_I2C1_HIGH_BIT_REMAP",
+  "AFIO_PCFR1_PA12_REMAP",
+  "AFIO_PCFR1_SWJ_CFG_DISABLE",
+  "AFIO_PCFR1_SWJ_CFG_JTAGDISABLE",
+  "AFIO_PCFR1_SWJ_CFG_NOJNTRST",
+  "AFIO_PCFR1_SWJ_CFG_RESET",
+  "AFIO_PCFR1_TIM1_1_RM",
+  "AFIO_PCFR1_TIM1_REMAP_FULLREMAP",
+  "AFIO_PCFR1_TIM1_REMAP_NOREMAP",
+  "AFIO_PCFR1_TIM1_REMAP_PARTIALREMAP",
+  "AFIO_PCFR1_TIM1_REMAP_PARTIALREMAP_1",
+  "AFIO_PCFR1_TIM2_REMAP_FULLREMAP",
+  "AFIO_PCFR1_TIM2_REMAP_NOREMAP",
+  "AFIO_PCFR1_TIM2_REMAP_PARTIALREMAP1",
+  "AFIO_PCFR1_TIM2_REMAP_PARTIALREMAP2",
+  "AFIO_PCFR1_USART1_HIGH_BIT_REMAP",
+  "AHBPERIPH_BASE",
+  "APB1PERIPH_BASE",
+  "APB2PERIPH_BASE",
+  "CFG0_PLL_TRIM",
+  "EXTEN_LDO_TRIM",
+  "EXTEN_OPA_EN",
+  "EXTEN_OPA_NSEL",
+  "EXTEN_OPA_PSEL",
+  "FLASH_BOOT_MODEKEYR_KEY1",
+  "FLASH_BOOT_MODEKEYR_KEY2",
+  "FLASH_CTLR_OPTPG",
+  "FLASH_CTLR_PG",
+  "FLASH_FLAG_BANK1_EOP",
+  "FLASH_IT_BANK1_EOP",
+  "FLASH_IT_BANK1_ERROR",
+  "FLASH_MODEKEYR_KEY1",
+  "FLASH_MODEKEYR_KEY2",
+  "FLASH_OBR_FIX_11",
+  "FLASH_OBR_STANDY_RST",
+  "FLASH_OBR_nRST_STOP",
+  "FLASH_STATR_LOCK",
+  "FLASH_STATR_MODE",
+  "FLASH_WRProt_Pages0to15",
+  "FLASH_WRProt_Pages112to127",
+  "FLASH_WRProt_Pages128to143",
+  "FLASH_WRProt_Pages144to159",
+  "FLASH_WRProt_Pages160to175",
+  "FLASH_WRProt_Pages16to31",
+  "FLASH_WRProt_Pages176to191",
+  "FLASH_WRProt_Pages192to207",
+  "FLASH_WRProt_Pages208to223",
+  "FLASH_WRProt_Pages224to239",
+  "FLASH_WRProt_Pages240to255",
+  "FLASH_WRProt_Pages32to47",
+  "FLASH_WRProt_Pages48to63",
+  "FLASH_WRProt_Pages64to79",
+  "FLASH_WRProt_Pages80to95",
+  "FLASH_WRProt_Pages96to111",
+  "GPIO_FullRemap_I2C1",
+  "GPIO_PartialRemap_I2C1",
+  "GPIO_Remap_PA1PA2",
+  "GPIO_Remap_SPI1",
+  "GPIO_Speed_50MHz",
+  "HardFault_IRQn",
+  "I2S_FLAG_CHSIDE",
+  "I2S_FLAG_UDR",
+  "I2S_IT_UDR",
+  "OB_STOP_NoRST",
+  "OB_STOP_RST",
+  "PWR_AWUCSR_AWUEN",
+  "PWR_AWUPSC_1024",
+  "PWR_AWUPSC_10240",
+  "PWR_AWUPSC_128",
+  "PWR_AWUPSC_16",
+  "PWR_AWUPSC_2048",
+  "PWR_AWUPSC_256",
+  "PWR_AWUPSC_32",
+  "PWR_AWUPSC_4",
+  "PWR_AWUPSC_4096",
+  "PWR_AWUPSC_512",
+  "PWR_AWUPSC_61440",
+  "PWR_AWUPSC_64",
+  "PWR_AWUPSC_8",
+  "PWR_CTLR_PLS_2",
+  "PWR_PVDLevel_2V9",
+  "PWR_PVDLevel_3V1",
+  "PWR_PVDLevel_3V3",
+  "PWR_PVDLevel_3V5",
+  "PWR_PVDLevel_3V7",
+  "PWR_PVDLevel_3V9",
+  "PWR_PVDLevel_4",
+  "PWR_PVDLevel_4V1",
+  "PWR_PVDLevel_4V4",
+  "PWR_PVDLevel_5",
+  "PWR_PVDLevel_6",
+  "PWR_PVDLevel_7",
+  "PWR_PVDLevel_MODE0",
+  "PWR_PVDLevel_MODE1",
+  "PWR_PVDLevel_MODE2",
+  "PWR_PVDLevel_MODE3",
+  "PWR_PVDLevel_MODE4",
+  "PWR_PVDLevel_MODE5",
+  "PWR_PVDLevel_MODE6",
+  "PWR_PVDLevel_MODE7",
+  "RCC_AHBPeriph_DMA1",
+  "RCC_AHBPeriph_SRAM",
+  "RCC_APB1Periph_I2C1",
+  "RCC_APB1Periph_PWR",
+  "RCC_APB1Periph_TIM2",
+  "RCC_APB1Periph_WWDG",
+  "RCC_APB2Periph_ADC1",
+  "RCC_APB2Periph_AFIO",
+  "RCC_APB2Periph_GPIOA",
+  "RCC_APB2Periph_GPIOC",
+  "RCC_APB2Periph_GPIOD",
+  "RCC_APB2Periph_SPI1",
+  "RCC_APB2Periph_TIM1",
+  "RCC_APB2Periph_USART1",
+  "RCC_FLAG_LPWRRST",
+  "RCC_LPWRRSTF",
+  "SPI_STATR_CHSIDE",
+  "SPI_STATR_UDR",
+  "USART_CPHA_1Edge",
+  "USART_CPHA_2Edge",
+  "USART_CPOL_High",
+  "USART_CPOL_Low",
+  "USART_CTLR2_CLKEN",
+  "USART_CTLR2_CPHA",
+  "USART_CTLR2_CPOL",
+  "USART_CTLR2_LBCL",
+  "USART_CTLR3_NACK",
+  "USART_CTLR3_SCEN",
+  "USART_Clock_Disable",
+  "USART_Clock_Enable",
+  "USART_GPR_GT",
+  "USART_LastBit_Disable",
+  "USART_LastBit_Enable",
+  "VENDOR_CFG0_BASE",
+  "_WFE_"
+ ],
+ "only_v003_funcs": [
+  "ADC_Calibration_Vol",
+  "ADC_ExternalTrig_DLY",
+  "ADC_GetCalibrationStatus",
+  "ADC_GetResetCalibrationStatus",
+  "ADC_ResetCalibration",
+  "ADC_StartCalibration",
+  "FLASH_ProgramHalfWord",
+  "FLASH_ProgramOptionByteData",
+  "FLASH_ProgramWord",
+  "FLASH_ReadOutProtection",
+  "OPA_DeInit",
+  "RCC_AHBPeriphClockCmd",
+  "RCC_APB1PeriphClockCmd",
+  "RCC_APB1PeriphResetCmd",
+  "RCC_APB2PeriphClockCmd",
+  "RCC_APB2PeriphResetCmd",
+  "USART_ClockInit",
+  "USART_ClockStructInit",
+  "USART_OneBitMethodCmd",
+  "USART_OverSampling8Cmd",
+  "USART_SetGuardTime",
+  "USART_SmartCardCmd",
+  "USART_SmartCardNACKCmd"
+ ],
+ "diff_value_macros": {
+  "ADC1_BASE": [
+   "(APB2PERIPH_BASE + 0x2400)",
+   "(PB2PERIPH_BASE + 0x2400)"
+  ],
+  "ADC_HT": [
+   "((uint16_t)0x03FF)",
+   "((uint16_t)0x0FFF)"
+  ],
+  "ADC_JOFFSET1": [
+   "((uint16_t)0x03FF)",
+   "((uint16_t)0x0FFF)"
+  ],
+  "ADC_JOFFSET2": [
+   "((uint16_t)0x03FF)",
+   "((uint16_t)0x0FFF)"
+  ],
+  "ADC_JOFFSET3": [
+   "((uint16_t)0x03FF)",
+   "((uint16_t)0x0FFF)"
+  ],
+  "ADC_JOFFSET4": [
+   "((uint16_t)0x03FF)",
+   "((uint16_t)0x0FFF)"
+  ],
+  "ADC_LT": [
+   "((uint16_t)0x03FF)",
+   "((uint16_t)0x0FFF)"
+  ],
+  "ADC_RDATAR_DATA": [
+   "((uint32_t)0xFFFFFFFF)",
+   "((uint32_t)0x0000FFFF)"
+  ],
+  "AFIO_BASE": [
+   "(APB2PERIPH_BASE + 0x0000)",
+   "(PB2PERIPH_BASE + 0x0000)"
+  ],
+  "AFIO_PCFR1_I2C1_REMAP": [
+   "((uint32_t)0x00000002)",
+   "((uint32_t)0x00000038)"
+  ],
+  "AFIO_PCFR1_SPI1_REMAP": [
+   "((uint32_t)0x00000001)",
+   "((uint32_t)0x00000007)"
+  ],
+  "AFIO_PCFR1_TIM1_REMAP": [
+   "((uint32_t)0x000000C0)",
+   "((uint32_t)0x00003C00)"
+  ],
+  "AFIO_PCFR1_TIM1_REMAP_0": [
+   "((uint32_t)0x00000040)",
+   "((uint32_t)0x00000400)"
+  ],
+  "AFIO_PCFR1_TIM1_REMAP_1": [
+   "((uint32_t)0x00000080)",
+   "((uint32_t)0x00000800)"
+  ],
+  "AFIO_PCFR1_TIM2_REMAP": [
+   "((uint32_t)0x00000300)",
+   "((uint32_t)0x0001C000)"
+  ],
+  "AFIO_PCFR1_TIM2_REMAP_0": [
+   "((uint32_t)0x00000100)",
+   "((uint32_t)0x00004000)"
+  ],
+  "AFIO_PCFR1_TIM2_REMAP_1": [
+   "((uint32_t)0x00000200)",
+   "((uint32_t)0x00008000)"
+  ],
+  "AFIO_PCFR1_USART1_REMAP": [
+   "((uint32_t)0x00000004)",
+   "((uint32_t)0x000003C0)"
+  ],
+  "DBGMCU_IWDG_STOP": [
+   "((uint32_t)0x00000001)",
+   "((uint32_t)0x00000100)"
+  ],
+  "DBGMCU_TIM1_STOP": [
+   "((uint32_t)0x00000010)",
+   "((uint32_t)0x00001000)"
+  ],
+  "DBGMCU_TIM2_STOP": [
+   "((uint32_t)0x00000020)",
+   "((uint32_t)0x00002000)"
+  ],
+  "DBGMCU_WWDG_STOP": [
+   "((uint32_t)0x00000002)",
+   "((uint32_t)0x00000200)"
+  ],
+  "DMA1_BASE": [
+   "(AHBPERIPH_BASE + 0x0000)",
+   "(HBPERIPH_BASE + 0x0000)"
+  ],
+  "DMA1_Channel1_BASE": [
+   "(AHBPERIPH_BASE + 0x0008)",
+   "(HBPERIPH_BASE + 0x0008)"
+  ],
+  "DMA1_Channel2_BASE": [
+   "(AHBPERIPH_BASE + 0x001C)",
+   "(HBPERIPH_BASE + 0x001C)"
+  ],
+  "DMA1_Channel3_BASE": [
+   "(AHBPERIPH_BASE + 0x0030)",
+   "(HBPERIPH_BASE + 0x0030)"
+  ],
+  "DMA1_Channel4_BASE": [
+   "(AHBPERIPH_BASE + 0x0044)",
+   "(HBPERIPH_BASE + 0x0044)"
+  ],
+  "DMA1_Channel5_BASE": [
+   "(AHBPERIPH_BASE + 0x0058)",
+   "(HBPERIPH_BASE + 0x0058)"
+  ],
+  "DMA1_Channel6_BASE": [
+   "(AHBPERIPH_BASE + 0x006C)",
+   "(HBPERIPH_BASE + 0x006C)"
+  ],
+  "DMA1_Channel7_BASE": [
+   "(AHBPERIPH_BASE + 0x0080)",
+   "(HBPERIPH_BASE + 0x0080)"
+  ],
+  "EXTEN_BASE": [
+   "((uint32_t)0x40023800)",
+   "(HBPERIPH_BASE + 0x3800)"
+  ],
+  "EXTI_BASE": [
+   "(APB2PERIPH_BASE + 0x0400)",
+   "(PB2PERIPH_BASE + 0x0400)"
+  ],
+  "FLASH_FLAG_OPTERR": [
+   "((uint32_t)0x00000001)",
+   "((uint32_t)0x80000001)"
+  ],
+  "FLASH_OBR_USER": [
+   "((uint16_t)0x03FC)",
+   "((uint16_t)0x00F4)"
+  ],
+  "FLASH_R_BASE": [
+   "(AHBPERIPH_BASE + 0x2000)",
+   "(HBPERIPH_BASE + 0x2000)"
+  ],
+  "FLASH_WRProt_AllPages": [
+   "((uint32_t)0x0000FFFF)",
+   "((uint32_t)0xFFFFFFFF)"
+  ],
+  "GPIOA_BASE": [
+   "(APB2PERIPH_BASE + 0x0800)",
+   "(PB2PERIPH_BASE + 0x0800)"
+  ],
+  "GPIOC_BASE": [
+   "(APB2PERIPH_BASE + 0x1000)",
+   "(PB2PERIPH_BASE + 0x1000)"
+  ],
+  "GPIOD_BASE": [
+   "(APB2PERIPH_BASE + 0x1400)",
+   "(PB2PERIPH_BASE + 0x1400)"
+  ],
+  "GPIO_CFGLR_MODE": [
+   "((uint32_t)0x33333333)",
+   "((uint32_t)0x11111111)"
+  ],
+  "GPIO_CFGLR_MODE0": [
+   "((uint32_t)0x00000003)",
+   "((uint32_t)0x00000001)"
+  ],
+  "GPIO_CFGLR_MODE0_0": [
+   "((uint32_t)0x00000001)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE0_1": [
+   "((uint32_t)0x00000002)",
+   "((uint32_t)0x00000001)"
+  ],
+  "GPIO_CFGLR_MODE1": [
+   "((uint32_t)0x00000030)",
+   "((uint32_t)0x00000010)"
+  ],
+  "GPIO_CFGLR_MODE1_0": [
+   "((uint32_t)0x00000010)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE1_1": [
+   "((uint32_t)0x00000020)",
+   "((uint32_t)0x00000010)"
+  ],
+  "GPIO_CFGLR_MODE2": [
+   "((uint32_t)0x00000300)",
+   "((uint32_t)0x00000100)"
+  ],
+  "GPIO_CFGLR_MODE2_0": [
+   "((uint32_t)0x00000100)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE2_1": [
+   "((uint32_t)0x00000200)",
+   "((uint32_t)0x00000100)"
+  ],
+  "GPIO_CFGLR_MODE3": [
+   "((uint32_t)0x00003000)",
+   "((uint32_t)0x00001000)"
+  ],
+  "GPIO_CFGLR_MODE3_0": [
+   "((uint32_t)0x00001000)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE3_1": [
+   "((uint32_t)0x00002000)",
+   "((uint32_t)0x00001000)"
+  ],
+  "GPIO_CFGLR_MODE4": [
+   "((uint32_t)0x00030000)",
+   "((uint32_t)0x00010000)"
+  ],
+  "GPIO_CFGLR_MODE4_0": [
+   "((uint32_t)0x00010000)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE4_1": [
+   "((uint32_t)0x00020000)",
+   "((uint32_t)0x00010000)"
+  ],
+  "GPIO_CFGLR_MODE5": [
+   "((uint32_t)0x00300000)",
+   "((uint32_t)0x00100000)"
+  ],
+  "GPIO_CFGLR_MODE5_0": [
+   "((uint32_t)0x00100000)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE5_1": [
+   "((uint32_t)0x00200000)",
+   "((uint32_t)0x00100000)"
+  ],
+  "GPIO_CFGLR_MODE6": [
+   "((uint32_t)0x03000000)",
+   "((uint32_t)0x01000000)"
+  ],
+  "GPIO_CFGLR_MODE6_1": [
+   "((uint32_t)0x02000000)",
+   "((uint32_t)0x01000000)"
+  ],
+  "GPIO_CFGLR_MODE7": [
+   "((uint32_t)0x30000000)",
+   "((uint32_t)0x10000000)"
+  ],
+  "GPIO_CFGLR_MODE7_0": [
+   "((uint32_t)0x10000000)",
+   "((uint32_t)0x00000000)"
+  ],
+  "GPIO_CFGLR_MODE7_1": [
+   "((uint32_t)0x20000000)",
+   "((uint32_t)0x10000000)"
+  ],
+  "GPIO_FullRemap_TIM1": [
+   "((uint32_t)0x001600C0)",
+   "((uint32_t)0x001A2400)"
+  ],
+  "GPIO_FullRemap_TIM2": [
+   "((uint32_t)0x00180300)",
+   "((uint32_t)0x084E0007)"
+  ],
+  "GPIO_FullRemap_USART1": [
+   "((uint32_t)0x80200004)",
+   "((uint32_t)0x00160240)"
+  ],
+  "GPIO_PartialRemap1_TIM1": [
+   "((uint32_t)0x00160040)",
+   "((uint32_t)0x001A0400)"
+  ],
+  "GPIO_PartialRemap1_TIM2": [
+   "((uint32_t)0x00180100)",
+   "((uint32_t)0x084E0001)"
+  ],
+  "GPIO_PartialRemap1_USART1": [
+   "((uint32_t)0x80000004)",
+   "((uint32_t)0x00160040)"
+  ],
+  "GPIO_PartialRemap2_TIM1": [
+   "((uint32_t)0x00160080)",
+   "((uint32_t)0x001A0800)"
+  ],
+  "GPIO_PartialRemap2_TIM2": [
+   "((uint32_t)0x00180200)",
+   "((uint32_t)0x084E0002)"
+  ],
+  "GPIO_PartialRemap2_USART1": [
+   "((uint32_t)0x80200000)",
+   "((uint32_t)0x00160080)"
+  ],
+  "GPIO_Pin_All": [
+   "((uint16_t)0xFFFF)",
+   "((uint16_t)0x00FF)"
+  ],
+  "GPIO_Remap_ADC1_ETRGINJ": [
+   "((uint32_t)0x00200002)",
+   "((uint32_t)0x00200004)"
+  ],
+  "GPIO_Remap_ADC1_ETRGREG": [
+   "((uint32_t)0x00200004)",
+   "((uint32_t)0x00200008)"
+  ],
+  "GPIO_Remap_LSI_CAL": [
+   "((uint32_t)0x00200080)",
+   "((uint32_t)0x001A3000)"
+  ],
+  "GPIO_Remap_PA1_2": [
+   "GPIO_Remap_PA1PA2",
+   "((uint32_t)0x00200002)"
+  ],
+  "GPIO_Remap_SDI_Disable": [
+   "((uint32_t)0x00300400)",
+   "((uint32_t)0x08300400)"
+  ],
+  "I2C1_BASE": [
+   "(APB1PERIPH_BASE + 0x5400)",
+   "(PB1PERIPH_BASE + 0x5400)"
+  ],
+  "IWDG_BASE": [
+   "(APB1PERIPH_BASE + 0x3000)",
+   "(PB1PERIPH_BASE + 0x3000)"
+  ],
+  "PWR_AWUPSC_0": [
+   "((uint16_t)0x0000)",
+   "((uint16_t)0x0001)"
+  ],
+  "PWR_AWUPSC_2": [
+   "((uint16_t)0x0002)",
+   "((uint16_t)0x0004)"
+  ],
+  "PWR_BASE": [
+   "(APB1PERIPH_BASE + 0x7000)",
+   "(PB1PERIPH_BASE + 0x7000)"
+  ],
+  "PWR_CTLR_PLS": [
+   "((uint16_t)0x00E0)",
+   "((uint16_t)0x0060)"
+  ],
+  "PWR_PVDLevel_0": [
+   "((uint16_t)0x0000)",
+   "((uint32_t)0x00000000)"
+  ],
+  "PWR_PVDLevel_1": [
+   "((uint16_t)0x0020)",
+   "((uint32_t)0x00000020)"
+  ],
+  "PWR_PVDLevel_2": [
+   "((uint16_t)0x0040)",
+   "((uint32_t)0x00000040)"
+  ],
+  "PWR_PVDLevel_3": [
+   "((uint16_t)0x0060)",
+   "((uint32_t)0x00000060)"
+  ],
+  "RCC_BASE": [
+   "(AHBPERIPH_BASE + 0x1000)",
+   "(HBPERIPH_BASE + 0x1000)"
+  ],
+  "SPI1_BASE": [
+   "(APB2PERIPH_BASE + 0x3000)",
+   "(PB2PERIPH_BASE + 0x3000)"
+  ],
+  "TIM1_BASE": [
+   "(APB2PERIPH_BASE + 0x2C00)",
+   "(PB2PERIPH_BASE + 0x2C00)"
+  ],
+  "TIM2_BASE": [
+   "(APB1PERIPH_BASE + 0x0000)",
+   "(PB1PERIPH_BASE + 0x0000)"
+  ],
+  "TIM_CCR1": [
+   "((uint16_t)0xFFFF)",
+   "((uint32_t)0x0000FFFF)"
+  ],
+  "TIM_CCR2": [
+   "((uint16_t)0xFFFF)",
+   "((uint32_t)0x0000FFFF)"
+  ],
+  "TIM_CCR3": [
+   "((uint16_t)0xFFFF)",
+   "((uint32_t)0x0000FFFF)"
+  ],
+  "TIM_CCR4": [
+   "((uint16_t)0xFFFF)",
+   "((uint32_t)0x0000FFFF)"
+  ],
+  "USART1_BASE": [
+   "(APB2PERIPH_BASE + 0x3800)",
+   "(PB2PERIPH_BASE + 0x3800)"
+  ],
+  "WWDG_BASE": [
+   "(APB1PERIPH_BASE + 0x2C00)",
+   "(PB1PERIPH_BASE + 0x2C00)"
+  ]
+ },
+ "manual_macros": [
+  "ADC1_BASE",
+  "ADC_HT",
+  "ADC_JOFFSET1",
+  "ADC_JOFFSET2",
+  "ADC_JOFFSET3",
+  "ADC_JOFFSET4",
+  "ADC_LT",
+  "ADC_RDATAR_DATA",
+  "AFIO_BASE",
+  "AFIO_PCFR1_I2C1_REMAP",
+  "AFIO_PCFR1_SPI1_REMAP",
+  "AFIO_PCFR1_TIM1_REMAP",
+  "AFIO_PCFR1_TIM1_REMAP_0",
+  "AFIO_PCFR1_TIM1_REMAP_1",
+  "AFIO_PCFR1_TIM2_REMAP",
+  "AFIO_PCFR1_TIM2_REMAP_0",
+  "AFIO_PCFR1_TIM2_REMAP_1",
+  "AFIO_PCFR1_USART1_REMAP",
+  "DBGMCU_IWDG_STOP",
+  "DBGMCU_TIM1_STOP",
+  "DBGMCU_TIM2_STOP",
+  "DBGMCU_WWDG_STOP",
+  "DMA1_BASE",
+  "DMA1_Channel1_BASE",
+  "DMA1_Channel2_BASE",
+  "DMA1_Channel3_BASE",
+  "DMA1_Channel4_BASE",
+  "DMA1_Channel5_BASE",
+  "DMA1_Channel6_BASE",
+  "DMA1_Channel7_BASE",
+  "EXTEN_BASE",
+  "EXTI_BASE",
+  "FLASH_FLAG_OPTERR",
+  "FLASH_OBR_USER",
+  "FLASH_R_BASE",
+  "FLASH_WRProt_AllPages",
+  "GPIOA_BASE",
+  "GPIOC_BASE",
+  "GPIOD_BASE",
+  "GPIO_CFGLR_MODE",
+  "GPIO_CFGLR_MODE0",
+  "GPIO_CFGLR_MODE0_0",
+  "GPIO_CFGLR_MODE0_1",
+  "GPIO_CFGLR_MODE1",
+  "GPIO_CFGLR_MODE1_0",
+  "GPIO_CFGLR_MODE1_1",
+  "GPIO_CFGLR_MODE2",
+  "GPIO_CFGLR_MODE2_0",
+  "GPIO_CFGLR_MODE2_1",
+  "GPIO_CFGLR_MODE3",
+  "GPIO_CFGLR_MODE3_0",
+  "GPIO_CFGLR_MODE3_1",
+  "GPIO_CFGLR_MODE4",
+  "GPIO_CFGLR_MODE4_0",
+  "GPIO_CFGLR_MODE4_1",
+  "GPIO_CFGLR_MODE5",
+  "GPIO_CFGLR_MODE5_0",
+  "GPIO_CFGLR_MODE5_1",
+  "GPIO_CFGLR_MODE6",
+  "GPIO_CFGLR_MODE6_1",
+  "GPIO_CFGLR_MODE7",
+  "GPIO_CFGLR_MODE7_0",
+  "GPIO_CFGLR_MODE7_1",
+  "GPIO_FullRemap_TIM1",
+  "GPIO_FullRemap_TIM2",
+  "GPIO_FullRemap_USART1",
+  "GPIO_PartialRemap1_TIM1",
+  "GPIO_PartialRemap1_TIM2",
+  "GPIO_PartialRemap1_USART1",
+  "GPIO_PartialRemap2_TIM1",
+  "GPIO_PartialRemap2_TIM2",
+  "GPIO_PartialRemap2_USART1",
+  "GPIO_Pin_All",
+  "GPIO_Remap_ADC1_ETRGINJ",
+  "GPIO_Remap_ADC1_ETRGREG",
+  "GPIO_Remap_LSI_CAL",
+  "GPIO_Remap_PA1_2",
+  "GPIO_Remap_SDI_Disable",
+  "I2C1_BASE",
+  "IWDG_BASE",
+  "PWR_AWUPSC_0",
+  "PWR_AWUPSC_2",
+  "PWR_BASE",
+  "PWR_CTLR_PLS",
+  "PWR_PVDLevel_0",
+  "PWR_PVDLevel_1",
+  "PWR_PVDLevel_2",
+  "PWR_PVDLevel_3",
+  "RCC_BASE",
+  "SPI1_BASE",
+  "TIM1_BASE",
+  "TIM2_BASE",
+  "TIM_CCR1",
+  "TIM_CCR2",
+  "TIM_CCR3",
+  "TIM_CCR4",
+  "USART1_BASE",
+  "WWDG_BASE"
+ ],
+ "manual_symbols": [
+  "GPIO_PinRemapConfig",
+  "GPIO_FullRemap",
+  "GPIO_PartialRemap",
+  "GPIO_Remap_",
+  "AFIO_PCFR1_",
+  "GPIO_CFGLR_MODE",
+  "GPIO_Pin_All",
+  "DBGMCU_GetCHIPID",
+  "DBGMCU_GetDEVID",
+  "DBGMCU_GetREVID",
+  "_WFE(",
+  "__WFE(",
+  "WFItoWFE",
+  "_WFE_",
+  "WFE(",
+  "FLASH_ErasePage",
+  "FLASH_ProgramPage_Fast",
+  "FLASH_ErasePage_Fast",
+  "FLASH_BufLoad",
+  "FLASH_BufReset",
+  "FLASH_ROM_ERASE",
+  "FLASH_ROM_WRITE",
+  "FLASH_EnableWriteProtection",
+  "FLASH_OBR_USER",
+  "OPA_Init",
+  "OPA_StructInit",
+  "OPA_Cmd",
+  "USART_Init",
+  "ADC_RegularChannelConfig",
+  "ADC_InjectedChannelConfig",
+  "RCC_SYSCLKConfig"
+ ],
+ "speed_obsolete": [
+  "GPIO_Speed_10MHz",
+  "GPIO_Speed_2MHz",
+  "GPIO_Speed_50MHz"
+ ],
+ "opa_symbols": [
+  "OPA_Init",
+  "OPA_StructInit",
+  "OPA_Cmd",
+  "OPA_DeInit"
+ ]
+}

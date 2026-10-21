@@ -1,0 +1,42 @@
+{
+  "savedAt": 1792551438152,
+  "config": {
+    "$schema": "https://opencode.ai/config.json",
+    "share": "disabled",
+    "provider": {
+      "default": {
+        "npm": "@ai-sdk/openai-compatible",
+        "name": "deepseek",
+        "options": {
+          "baseURL": "https://llm.mounriver.com/v1",
+          "apiKey": "{env:MRS_AGENT_API_KEY}",
+          "headers": {
+            "Authorization": "Bearer {env:MRS_AGENT_API_KEY}"
+          }
+        },
+        "models": {
+          "deepseek-flash": {
+            "name": "deepseek-flash",
+            "limit": {
+              "context": 524288,
+              "output": 131072
+            }
+          }
+        }
+      }
+    },
+    "model": "default/deepseek-flash",
+    "compaction": {
+      "auto": true,
+      "prune": true,
+      "reserved": 131072,
+      "tail_turns": 3,
+      "preserve_recent_tokens": 10240
+    },
+    "skills": {
+      "paths": [
+        "C:/Users/AlipayJH/.config/opencode/skills"
+      ]
+    }
+  }
+}

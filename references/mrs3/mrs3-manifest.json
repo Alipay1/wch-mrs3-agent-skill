@@ -1,0 +1,433 @@
+﻿{
+    "schema":  1,
+    "exportedAt":  "2026-10-21T03:09:36Z",
+    "mrs3":  {
+                 "installRoot":  "C:\\MounRiver\\MounRiver_Studio3",
+                 "appVersion":  "1.80.2",
+                 "mrsVersion":  "3.0.0",
+                 "productDate":  "2026-10-17T09:25:58.663Z",
+                 "commit":  "3d0e39c3f380068b67ce890dd4536a660e056bae"
+             },
+    "wchAgent":  {
+                     "variant":  "default",
+                     "version":  "v1.10",
+                     "intro":  "WCH Agent",
+                     "payload":  "C:\\MounRiver\\MounRiver_Studio3\\resources\\app\\resources\\win32\\components\\WCH\\Others\\WCHAgent\\default\\opencode"
+                 },
+    "opencodeExe":  {
+                        "path":  "C:\\MounRiver\\MounRiver_Studio3\\resources\\app\\resources\\win32\\components\\WCH\\Others\\WCHAgent\\default\\opencode.exe",
+                        "fileVersion":  "1.3.14",
+                        "sha256":  "6a20a9cd294f52a3032d44950066e196367bb3e3469c33b2edf8315437b0b060",
+                        "copied":  false
+                    },
+    "runtimeHome":  "C:\\Users\\AlipayJH\\.config\\opencode",
+    "fileCount":  81,
+    "skillCount":  8,
+    "files":  [
+                  {
+                      "path":  ".gitignore",
+                      "sha256":  "663a068e76d264d0bc6740f5450b6c4193c7b41ecf5e0dc222485b8a17404d95",
+                      "size":  63
+                  },
+                  {
+                      "path":  "AGENTS.md",
+                      "sha256":  "96c10cbc755af0c70353b3191ea3a3a1c1fa8502896de4d48682363e2ed7f6d1",
+                      "size":  10558
+                  },
+                  {
+                      "path":  "mcp.json",
+                      "sha256":  "2a72b762526d144f83d9de8f088a5e00515182b7ef8fa46ce3e38693fa3ddf3f",
+                      "size":  260
+                  },
+                  {
+                      "path":  "opencode.json",
+                      "sha256":  "a7ed405c0dfe0015c4057265980bc5ca81b965127b5c273964cc8b14207c3a4d",
+                      "size":  861
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\SKILL.md",
+                      "sha256":  "4dce1b8163b4955a323350c986ee57d4d68c0b5a292feedbcc10bd737a7e8b7b",
+                      "size":  12986
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\01_model-and-project.md",
+                      "sha256":  "81305cb2db49744dce2dce74e00c9c1c381d743ef605e3f5a733a961201b1af5",
+                      "size":  6955
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\02_macro-delta.md",
+                      "sha256":  "45594874b8868e8a851dc30df9475e65a3758a6d40b949d0a44c2c760f44433b",
+                      "size":  11684
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\03_api-delta.md",
+                      "sha256":  "3b60a1d25e1675878670d2f136aa67f05b1e47c11dca09c92f9a1a53e38f8021",
+                      "size":  7134
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\04_migration-rules.md",
+                      "sha256":  "f112c66759915f2d7b07da74d0e254bfa7442f03412fea88b3222d9b4f501c1d",
+                      "size":  8455
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\05_flash.md",
+                      "sha256":  "5bbdc58e125bf3112297dd72de5bf633ddbe134bafbce4946902c271fde56cdc",
+                      "size":  7036
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\06_gpio.md",
+                      "sha256":  "72cba91b0189a7468f2ebd0518ef7b2b9411fd9c4f556f1669b3471219505d8c",
+                      "size":  6785
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\07_func-behavior.md",
+                      "sha256":  "3fe0fe759917649c1671ef060ce444e0fca02f2af732228e1b1653231ed88f75",
+                      "size":  8981
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\08_core-riscv.md",
+                      "sha256":  "fe17ba44627c9684637d4115defbf8af03050e652d9f248962d1bac506fa3e02",
+                      "size":  4815
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\references\\09_appendix-full-lists.md",
+                      "sha256":  "ef41891a52a36a013c8aa1877f32f35ab6fbf8ebcf9ba7f6f54703d313ea9f1a",
+                      "size":  32697
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\scripts\\data.json",
+                      "sha256":  "f4f6bfaaf7ff1a65db6a7ee5f6a24abf774b3b2790b2ab46a665fb6d0dc17d1c",
+                      "size":  18148
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\scripts\\scan_v003_symbols.ps1",
+                      "sha256":  "d5760b7d7b2c1c732f5398fcd23637e0747d49e473efde6bd119017094afa040",
+                      "size":  19079
+                  },
+                  {
+                      "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\scripts\\scan_v003_symbols.py",
+                      "sha256":  "abcc78a48a89e720935615c0e9cd5dae95869a52a36f825833ecd47304aad56c",
+                      "size":  13814
+                  },
+                  {
+                      "path":  "skills\\mrs-code-check-fix\\SKILL.md",
+                      "sha256":  "641aeffebe8c9d82335e340c2b4e08de1a6ce51caa7131fffd5e4531aefa6804",
+                      "size":  6353
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\check_debug.bat",
+                      "sha256":  "b01967601ca360c72bb047750528b7979515cc7fca8df62bba2110434b7f890b",
+                      "size":  2352
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\check_debug.ps1",
+                      "sha256":  "f684730060ee9cd963e18ef0d2fa8e07c928c6935057e086928de17ddc4b354d",
+                      "size":  19100
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\check_debug.py",
+                      "sha256":  "57d6143cd3219cb5204ed89c16fcaccbcf8536352d52cda3264aff69bed68253",
+                      "size":  19260
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\check_debug.sh",
+                      "sha256":  "02f6a2d6e1418b9bcf8ba2b891f121c2603fd084ede1d00d6b8fa0dbfdf22cfe",
+                      "size":  16320
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\mcu_isa.json",
+                      "sha256":  "9231ea76b98f51a2b774a5157452cbdef5b3b34607a1e8349a2a0629b9eda64d",
+                      "size":  42248
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\README.md",
+                      "sha256":  "e320fccc869098d6fbda83ce5c7e310ea514238ea67c4bf44d3c9e0921322386",
+                      "size":  7297
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\SKILL.md",
+                      "sha256":  "f9b2bb20f9e334212daa4390a89e8fa946332f67a8458a75fa77535124739329",
+                      "size":  15442
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\tests\\link_multi_equal_limit.ld",
+                      "sha256":  "85ff93f0fbc59a535e05d470a32846551f342a71f0221d7f0e3741670d32ef1e",
+                      "size":  442
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\tests\\link_single_origin_zero.ld",
+                      "sha256":  "cc645fbd0396197ff17923aebe60e00e42fb1aae834b04fda0366dbc26e4682d",
+                      "size":  433
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\tests\\link_single_over_limit.ld",
+                      "sha256":  "614ced22b0335ffc4041d64388f709d61fead6ad3a5343636f41bc022e9d25be",
+                      "size":  325
+                  },
+                  {
+                      "path":  "skills\\mrs-debug-check\\tests\\link_v5f_ok_nonzero_origin.ld",
+                      "sha256":  "144b3f446874b99977ba2b2e63d87fb1b5a8d111369256c787788e60efa65ac5",
+                      "size":  713
+                  },
+                  {
+                      "path":  "skills\\mrs-external-tools\\mrs_pipe_host.ps1",
+                      "sha256":  "89e9ee84b910c4552668292439352c1359bc6504d275cf416a7cd0105898f232",
+                      "size":  29073
+                  },
+                  {
+                      "path":  "skills\\mrs-external-tools\\mrs_pipe_send.ps1",
+                      "sha256":  "28590501a64f915d6646a6fbd866803582ff80dd689a5cbe2c3f61b5897c7439",
+                      "size":  29755
+                  },
+                  {
+                      "path":  "skills\\mrs-external-tools\\SKILL.md",
+                      "sha256":  "d2812dc0b4c91eda1e8a9188bacb74ee04cd5d9d8bbc6e697d9e0fa09ee09be0",
+                      "size":  111741
+                  },
+                  {
+                      "path":  "skills\\mrs-prepare-verify\\SKILL.md",
+                      "sha256":  "a937fae19700cc78d6a8cfe6e77842dea2cbaca89a8a0c952887bdd8147e94bd",
+                      "size":  56200
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\SKILL.md",
+                      "sha256":  "3135fdc07e9c0f6452355efede6a56eccb042de8b8989e33f16d1fc4468270fb",
+                      "size":  69672
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\01_regmap.md",
+                      "sha256":  "4130d76afe9b5e4962ce28abd9e2888ce81bff7d09b4e622083e0f5f98fb5da3",
+                      "size":  92085
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\02_structmap.md",
+                      "sha256":  "a0694f36b2c7989310a71638943482b02c3d11a2f87266b858e244e058a13c09",
+                      "size":  13731
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\03_semantic-gaps.md",
+                      "sha256":  "5c56c2f5bcb79f1baae81b5e2e7cdcc493d384a3f9e6480e39998a9051cccfd7",
+                      "size":  25782
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\04_api-delta.md",
+                      "sha256":  "35b432ff80dd266ed0104148da219c0c77318d8cbb6a8884773c523a181975dc",
+                      "size":  1982
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\05_migration-rules.md",
+                      "sha256":  "64c329be63a050a7f001de938dc13417b4a5dc9b6e6424849277d3b8e55f9202",
+                      "size":  38167
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\06_interrupt-map.md",
+                      "sha256":  "02d6722616615f349e6657a7908dfbd1903bce10a73848641cbd6a2292a6ea8a",
+                      "size":  10338
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\07_pointer-and-bitband.md",
+                      "sha256":  "48315c42ee4d04da961ed28c433fa77d5d4ba82b098ba8c65e3a8ce7345cf41f",
+                      "size":  22538
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\08_func-behavior.md",
+                      "sha256":  "9f91d85b7249045c88ef886205042ae2e926725b4b6f7eb0cd76d425d0719537",
+                      "size":  32679
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\09_model-mapping.md",
+                      "sha256":  "1a05b93ef892ba4574dff0a87724d5c799cfa5a7fc975cde79cfc85987a0fa11",
+                      "size":  8146
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\references\\10_usb-migration.md",
+                      "sha256":  "652093a95363f7f3cfc352146e25e87437495697961e549c610df6d12fd73b90",
+                      "size":  32640
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\scripts\\scan_regaccess.ps1",
+                      "sha256":  "a501b5acfec3d29b0ef6c5c5d5787892243ecfc5e158d544d4b7055baa6e3ebc",
+                      "size":  18128
+                  },
+                  {
+                      "path":  "skills\\mrs-stm32f1-to-ch32v20x-spl\\scripts\\scan_regaccess.py",
+                      "sha256":  "33726ddd1b45750b53c3d689d29741e2152dd5e343ba9e2a4b6a7b0a45cdaba3",
+                      "size":  11703
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\b",
+                      "sha256":  "885fa5c5cb5f80fdb414f1b3e0b94c4b1366db1ce83e82358c4cb67da2ab73e4",
+                      "size":  4
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\FLASH",
+                      "sha256":  "48f6fbd003fddca14469e509f7a763bce5532e61368b719b1640b662149eb4f6",
+                      "size":  56
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\mcu_isa.json",
+                      "sha256":  "9231ea76b98f51a2b774a5157452cbdef5b3b34607a1e8349a2a0629b9eda64d",
+                      "size":  42248
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\RAM",
+                      "sha256":  "0b881c15036ca97909b9d95b7cb44bf72128f51dcc5b64144eba15561837c61a",
+                      "size":  72
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\README.md",
+                      "sha256":  "0c5bb05b8e3509a021f1d10601068da25bae5f919e4c2ea9b45bb31e38cf593e",
+                      "size":  8102
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\SKILL.md",
+                      "sha256":  "1c2e44d5e8ceda8e143fdba991b960d7974933973807ee5cf15ff54ce0476f16",
+                      "size":  13787
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\validate_linkld.bat",
+                      "sha256":  "456f13e2488f843655032c0b0a6e57bf2aeb7b9f66a87af19407077bcbcf3b13",
+                      "size":  1996
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\validate_linkld.js",
+                      "sha256":  "a2324adf1fe663c817dfb5680112508f9ae898d6728c488c4d56742df93c6932",
+                      "size":  19633
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\validate_linkld.ps1",
+                      "sha256":  "6e87f520780423df2a7609dbf94aa261a8c001f4795e23471ed620166da2cb73",
+                      "size":  28210
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\validate_linkld.py",
+                      "sha256":  "b2527206f842df9bdaa95ab5371304d605b9b2206612a3c88c43081963d3603e",
+                      "size":  27371
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\validate_linkld.sh",
+                      "sha256":  "171ce151121f76d32a32e70e726b2a0780df86464b466662adf20a2aaadd6fd8",
+                      "size":  22196
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_comment_wildcard_ok.ld",
+                      "sha256":  "492832e39a206e4881f8c7e6f88f4028d7c9ab2ec228bc69625020dbac907a83",
+                      "size":  914
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_expr_length_ok.ld",
+                      "sha256":  "91f71e0183c4b3bd76e439788cdc7cd8ad985c7c52109e9a1aae641b0a2a6ca0",
+                      "size":  1038
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_multi_region_ok.ld",
+                      "sha256":  "2106c89af8a29c473dd4760a527d69bc2fdc995e89beab9c7a1d76c522d989e1",
+                      "size":  992
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_multi_region_overflow.ld",
+                      "sha256":  "f7e934701e24c8b0aba3bb6b3a27d1dfc590f7d23b457cdcf30cee13d18c95e0",
+                      "size":  929
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_number_expr_ok.ld",
+                      "sha256":  "268c017195f638f5413dbd8a5c533ec78afbe20b82f1973abac82616e128460d",
+                      "size":  835
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_single_bad.ld",
+                      "sha256":  "afb062477e22dcaffa54e9514cf41006d2afbc7e9dd279bb6ef6e4f44681a901",
+                      "size":  627
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_space_bad.ld",
+                      "sha256":  "951f1f71f20ffcc4430a0914931349dd434d93781897ea849d768bb397a96cbf",
+                      "size":  616
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_syntax_bad.ld",
+                      "sha256":  "70eaa17e871e9f857ba7b87cd2dccf75ad44d1b544d53bfce3cca66734cc2578",
+                      "size":  795
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_v5f_ok.ld",
+                      "sha256":  "9c431ccb442768b9fae6e8e678fab4b2a4f75f39b0e516ecd21018e53ac79fdd",
+                      "size":  672
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\link_v5f_overflow.ld",
+                      "sha256":  "e63481cbb4e23994eb331879f6d01547c1404854dc2991c891ccb32d29e35623",
+                      "size":  544
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-linkld\\tests\\_bat_probe.bat",
+                      "sha256":  "adce273da1a14a947fe25ca5272533a550afd0f29aba4c0ec3a268afa011eeba",
+                      "size":  1812
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\check_march.bat",
+                      "sha256":  "7bb6af7797a101e47667454edcdced8376a6f1b030f85745cd2235c74f31de6d",
+                      "size":  2080
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\check_march.js",
+                      "sha256":  "095b9aa0c06a25dce4dfa06bb86be31d13c9da31db953f99f73822da010d9439",
+                      "size":  13075
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\check_march.ps1",
+                      "sha256":  "f11ca21178127aef6a72632db25266624bb8ab2e4db99d6d5d0c7452bb912024",
+                      "size":  16170
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\check_march.py",
+                      "sha256":  "e2aaeea52f065d9b62c8647164d6ef60fc8f8f7d53d75184dce793ce1c2cbd3e",
+                      "size":  15283
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\check_march.sh",
+                      "sha256":  "34cc872facf4323cd8037e5fb4326a886775b93869ad6f0d29fcce81d117265f",
+                      "size":  18489
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\mcu_isa.json",
+                      "sha256":  "9231ea76b98f51a2b774a5157452cbdef5b3b34607a1e8349a2a0629b9eda64d",
+                      "size":  42248
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\README.md",
+                      "sha256":  "8123c8bda0383e658692f9963683cc59e30c27d306db2bb77f4eabfe86775db2",
+                      "size":  6969
+                  },
+                  {
+                      "path":  "skills\\mrs-validate-march\\SKILL.md",
+                      "sha256":  "6bd61c68cf8463aa0f59a594a6cf7c092aed5a199d2e12fa0c2d7d434c5230d7",
+                      "size":  15782
+                  },
+                  {
+                      "path":  "_variant\\LICENSE",
+                      "sha256":  "625f0f619133f89bbbb2abe37369613dfa1885eba1e50d02170deb62bb42cb6b",
+                      "size":  1065
+                  },
+                  {
+                      "path":  "_variant\\mrs-agent-todowrite-instructions.md",
+                      "sha256":  "c930b3f87aff0a1892b0043d43fef455d3b63e5750983f0d03359e9e81637c20",
+                      "size":  1822
+                  },
+                  {
+                      "path":  "_variant\\package.json",
+                      "sha256":  "d742cc991edda750973c83f33f2e49205a3ca8deb46394206a573c4454233da9",
+                      "size":  5
+                  },
+                  {
+                      "path":  "_variant\\TempData\\mrs-agent-todowrite-instructions.md",
+                      "sha256":  "f3444ab96a96e048ccf0af30bf4cbc4fdcca0e2dec8a3b33c2a2d44ac8c01e38",
+                      "size":  3372
+                  },
+                  {
+                      "path":  "_variant\\TempData\\mrs-standard-config.json",
+                      "sha256":  "7120a540594bdd9716fca0d92f7b49ee21520ae3cab1aeece943516cf615b712",
+                      "size":  981
+                  }
+              ]
+}

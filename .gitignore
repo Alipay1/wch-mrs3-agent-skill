@@ -1,0 +1,13 @@
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# Logs and transcripts
+*.log
+*.transcript
+
+# Local scratch
+.selftest/
