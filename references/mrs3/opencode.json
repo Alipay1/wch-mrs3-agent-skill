@@ -33,7 +33,7 @@
   },
   "skills": {
     "paths": [
-      "C:/Users/AlipayJH/.config/opencode/skills"
+      "C:/Users/<user>/.config/opencode/skills"
     ]
   }
 }

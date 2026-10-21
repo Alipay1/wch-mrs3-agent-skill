@@ -1,6 +1,14 @@
 ﻿{
-    "schema":  1,
-    "exportedAt":  "2026-10-21T03:09:36Z",
+    "schema":  2,
+    "exportedAt":  "2026-10-21T14:10:38Z",
+    "sanitization":  {
+                         "applied":  true,
+                         "rule":  "local user profile path (C:\\Users\\<name>) is rewritten to C:\\Users\\<user> before hashing and before writing the mirror",
+                         "files":  [
+                                       "opencode.json",
+                                       "_variant\\TempData\\mrs-standard-config.json"
+                                   ]
+                     },
     "mrs3":  {
                  "installRoot":  "C:\\MounRiver\\MounRiver_Studio3",
                  "appVersion":  "1.80.2",
@@ -20,7 +28,7 @@
                         "sha256":  "6a20a9cd294f52a3032d44950066e196367bb3e3469c33b2edf8315437b0b060",
                         "copied":  false
                     },
-    "runtimeHome":  "C:\\Users\\AlipayJH\\.config\\opencode",
+    "runtimeHome":  "C:\\Users\\<user>\\.config\\opencode",
     "fileCount":  81,
     "skillCount":  8,
     "files":  [
@@ -41,8 +49,8 @@
                   },
                   {
                       "path":  "opencode.json",
-                      "sha256":  "a7ed405c0dfe0015c4057265980bc5ca81b965127b5c273964cc8b14207c3a4d",
-                      "size":  861
+                      "sha256":  "20827e89fb24175440ea5b8767188e459c279206553b3bb0c990dba2b947580a",
+                      "size":  859
                   },
                   {
                       "path":  "skills\\mrs-ch32v003-to-ch32v002-005\\SKILL.md",
@@ -426,8 +434,8 @@
                   },
                   {
                       "path":  "_variant\\TempData\\mrs-standard-config.json",
-                      "sha256":  "7120a540594bdd9716fca0d92f7b49ee21520ae3cab1aeece943516cf615b712",
-                      "size":  981
+                      "sha256":  "ad94c7206461de51cb50f92c39ea29e446d28809784195d45d8afcb2e951d212",
+                      "size":  979
                   }
               ]
 }

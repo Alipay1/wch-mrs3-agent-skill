@@ -1,7 +1,7 @@
 # WCH MounRiver Studio 3 Agent Skill
 
 An Agent-facing package for WCH MounRiver Studio 3 on Windows, in three parts:
-toolchain automation, the IDE's own tool surface called over MCP, and a byte-exact
+toolchain automation, the IDE's own tool surface called over MCP, and a mirror
 mirror of the embedded agent's prompts and skills.
 
 **Requirements:** Windows 10/11, PowerShell 5.1 or newer, and WCH MounRiver Studio 3
@@ -86,11 +86,11 @@ this skill talks to the MCP port.
 
 MRS3 ships its own agent — an OpenCode build with a WCH prompt and eight skills —
 as plain readable files inside the installation. That payload is mirrored here
-byte-for-byte, so its domain knowledge is usable from any agent, and so upgrades
+with the local profile path sanitized to `<user>`, so its domain knowledge is usable from any agent, and so upgrades
 show up as a diff rather than as unexplained behaviour changes.
 
 - `scripts/sync-mrs3-agent.ps1` — extract, snapshot, drift-check.
-- `references/mrs3/` — byte-exact mirror (`AGENTS.md`, `opencode.json`, `mcp.json`,
+- `references/mrs3/` — payload mirror (`AGENTS.md`, `opencode.json`, `mcp.json`,
   `skills/**`, `_variant/**`) plus `mrs3-manifest.json` with per-file SHA256.
 - `references/mrs3-skill-catalog.md` — distilled prompts, skill catalog, IDE tool
   surface, runtime configuration.
@@ -115,13 +115,13 @@ scripts\wch-mrs3.ps1              toolchain automation + IDE tools over MCP
 scripts\sync-mrs3-agent.ps1       MRS3 extraction / sync / drift check
 references\mrs3-skill-catalog.md  distilled MRS3 knowledge
 references\mrs3-sync.md           refresh methodology
-references\mrs3\                  byte-exact MRS3 payload mirror + manifest
+references\mrs3\                  MRS3 payload mirror (profile path sanitized) + manifest
 ```
 
 ## Notes from field use
 
 - Keep PowerShell automation scripts ASCII-only or UTF-8 with BOM for Windows
-  PowerShell 5.1 compatibility. Mirrored Markdown is copied byte-for-byte and keeps
+  PowerShell 5.1 compatibility. Mirrored Markdown keeps
   its Chinese content; only the scripts need the ASCII discipline. That also means
   matching IDE prose has to go through code points, not literals.
 - Generated make files hard-code a compiler name (`riscv-none-embed-gcc`,
@@ -159,7 +159,7 @@ references\mrs3\                  byte-exact MRS3 payload mirror + manifest
 ## License and attribution
 
 Original code and documentation are MIT licensed — see [LICENSE](LICENSE).
-`references/mrs3/**` is a byte-exact mirror of files shipped inside MounRiver
+`references/mrs3/**` mirrors files shipped inside MounRiver
 Studio 3 and remains the property of WCH / MounRiver and the OpenCode project; see
 [NOTICE.md](NOTICE.md) for details.
 

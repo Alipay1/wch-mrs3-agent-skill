@@ -234,6 +234,6 @@ Reading `mrs-serve-state.json` is the cheapest way to learn where the live agent
 
 ## 5. How this catalog stays honest
 
-`references/mrs3/` is a byte-exact mirror with per-file SHA256 in
+`references/mrs3/` is a payload mirror (profile path sanitized to `<user>`) with per-file SHA256 in
 `mrs3-manifest.json`. If WCH ships a new agent, `-Action Check` reports exactly
 which files moved. See `mrs3-sync.md` for the refresh procedure.

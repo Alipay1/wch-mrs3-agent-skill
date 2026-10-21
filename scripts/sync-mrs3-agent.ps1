@@ -82,6 +82,57 @@ function Get-Sha256 {
     return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()
 }
 
+# The payload bakes the local user's profile path into a couple of config files
+# (skills.paths in opencode.json and mrs-standard-config.json). The mirror must be
+# machine independent and safe to publish, so that profile segment is rewritten to
+# <user>, and the hash baseline is computed over the sanitized form on BOTH sides
+# of the comparison. Files that never match the pattern are copied and hashed
+# byte-for-byte, so they stay exact.
+function Get-SanitizeRules {
+    $profile = $env:USERPROFILE
+    if ([string]::IsNullOrWhiteSpace($profile)) { return @() }
+    $leaf = Split-Path -Leaf $profile
+    if ([string]::IsNullOrWhiteSpace($leaf)) { return @() }
+    # Escaped JSON form first, so it wins over the plain backslash form.
+    return @(
+        @{ From = ('C:\\Users\\' + $leaf); To = 'C:\\Users\\<user>' },
+        @{ From = ('C:/Users/' + $leaf);   To = 'C:/Users/<user>' },
+        @{ From = ('C:\Users\' + $leaf);   To = 'C:\Users\<user>' }
+    )
+}
+
+function ConvertTo-SanitizedText {
+    param([string]$Text)
+    foreach ($rule in (Get-SanitizeRules)) {
+        $Text = $Text.Replace([string]$rule.From, [string]$rule.To)
+    }
+    return $Text
+}
+
+function Get-MirrorBytes {
+    param([string]$Path)
+    $bytes = [IO.File]::ReadAllBytes($Path)
+    if ($bytes.Length -eq 0) { return $bytes }
+    # Binary safety: never rewrite a file that contains NUL bytes.
+    if ($bytes -contains 0) { return $bytes }
+    $utf8 = New-Object Text.UTF8Encoding($false)
+    $text = $utf8.GetString($bytes)
+    $clean = ConvertTo-SanitizedText $text
+    if ($clean -ceq $text) { return $bytes }
+    return $utf8.GetBytes($clean)
+}
+
+function Get-MirrorSha256 {
+    param([string]$Path)
+    $bytes = Get-MirrorBytes $Path
+    $sha = [Security.Cryptography.SHA256]::Create()
+    try {
+        return ([BitConverter]::ToString($sha.ComputeHash($bytes)) -replace '-', '').ToLowerInvariant()
+    } finally {
+        $sha.Dispose()
+    }
+}
+
 function Test-IsMRS3Root {
     param([string]$Path)
     if (-not $Path) { return $false }
@@ -420,7 +471,7 @@ if ($Action -eq 'Check') {
 
     $new = @{}
     foreach ($f in $sources) {
-        $new[[string]$f.Rel] = Get-Sha256 $f.Source
+        $new[[string]$f.Rel] = Get-MirrorSha256 $f.Source
     }
 
     foreach ($k in ($new.Keys | Sort-Object)) {
@@ -461,6 +512,7 @@ if (Test-Path -LiteralPath $Destination) {
 }
 
 $entries = New-Object System.Collections.ArrayList
+$sanitized = New-Object System.Collections.ArrayList
 $copied = 0
 foreach ($s in $sources) {
     $rel = [string]$s.Rel
@@ -469,12 +521,18 @@ foreach ($s in $sources) {
     if (-not (Test-Path -LiteralPath $targetDir)) {
         New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
     }
-    Copy-Item -LiteralPath $s.Source -Destination $target -Force
-    $hash = Get-Sha256 $target
-    $entries.Add([ordered]@{ path = $rel; sha256 = $hash; size = $s.Length }) | Out-Null
+    $bytes = Get-MirrorBytes $s.Source
+    [IO.File]::WriteAllBytes($target, $bytes)
+    $hash = Get-MirrorSha256 $target
+    if ($hash -ne (Get-Sha256 $s.Source)) { $sanitized.Add($rel) | Out-Null }
+    $entries.Add([ordered]@{ path = $rel; sha256 = $hash; size = $bytes.Length }) | Out-Null
     $copied++
 }
 Write-Info "copied $copied file(s)"
+if ($sanitized.Count -gt 0) {
+    Write-Info ("sanitized {0} file(s): local profile path -> <user>" -f $sanitized.Count)
+    $sanitized | ForEach-Object { Write-Info "  $_" }
+}
 
 # Report extras that stayed behind when -Force was not used.
 if (-not $Force) {
@@ -503,10 +561,15 @@ if (Test-Path -LiteralPath $skillsDir) {
 }
 
 $manifestOut = [ordered]@{
-    schema       = 1
+    schema       = 2
     exportedAt   = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
+    sanitization = [ordered]@{
+        applied = $true
+        rule    = 'local user profile path (C:\Users\<name>) is rewritten to C:\Users\<user> before hashing and before writing the mirror'
+        files   = @($sanitized)
+    }
     mrs3         = [ordered]@{
-        installRoot = $root
+        installRoot = (ConvertTo-SanitizedText $root)
         appVersion  = $product.Version
         mrsVersion  = $product.MrsVersion
         productDate = $product.Date
@@ -516,22 +579,23 @@ $manifestOut = [ordered]@{
         variant = $agent.VariantName
         version = $agent.Version
         intro   = $agent.Intro
-        payload = $agent.PayloadDir
+        payload = (ConvertTo-SanitizedText $agent.PayloadDir)
     }
     opencodeExe  = [ordered]@{
-        path        = $agent.ExePath
+        path        = (ConvertTo-SanitizedText $agent.ExePath)
         fileVersion = $agent.ExeFileVersion
         sha256      = $agent.ExeSha256
         copied      = $false
     }
-    runtimeHome  = $runtimeNote
+    runtimeHome  = (ConvertTo-SanitizedText $runtimeNote)
     fileCount    = $entries.Count
     skillCount   = $skillCount
     files        = $entries
 }
 
 $manifestPath = Get-ManifestPath $Destination
-$json = $manifestOut | ConvertTo-Json -Depth 6
+# ConvertTo-Json escapes < and > as \u003c / \u003e; keep the placeholders readable.
+$json = ($manifestOut | ConvertTo-Json -Depth 6).Replace('\u003c', '<').Replace('\u003e', '>')
 Set-Content -LiteralPath $manifestPath -Value $json -Encoding UTF8
 Write-Info "manifest: $manifestPath"
 

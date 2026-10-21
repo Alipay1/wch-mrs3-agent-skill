@@ -29,7 +29,7 @@ delay code.**
 - Keep executable PowerShell scripts ASCII-only unless saved as UTF-8 with BOM.
   Windows PowerShell 5.1 may parse UTF-8-without-BOM scripts through the active
   ANSI code page, turning non-ASCII literals into syntax errors before the script
-  runs. (Mirrored Markdown is copied byte-for-byte and keeps its Chinese content.)
+  runs. (Mirrored Markdown keeps its Chinese content; the only substitution is the local profile path, rewritten to `<user>`.)
 - Modify only the current process environment by default. Persist only the current
   user's `MRS3_HOME` and `PATH`. Never touch machine-wide PATH and never request
   administrator rights merely to configure MRS3.
@@ -296,7 +296,7 @@ The extension spawns the agent as a headless server —
 port and MCP port in `mrs-serve-state.json`. Part 1.8 uses that record; this part is
 about what the agent knows, not how to call it.
 
-A byte-exact mirror lives in `references/mrs3/`, hashed in
+A mirror lives in `references/mrs3/` — byte-exact apart from the local profile path, which is rewritten to `<user>` — hashed in
 `references/mrs3/mrs3-manifest.json`. Read it directly when you need the exact
 wording; use `references/mrs3-skill-catalog.md` for the distilled index.
 `scripts/wch-mrs3.ps1 -Action agent` reports the payload, engine version and live
@@ -416,5 +416,5 @@ Full procedure, layout-change fallbacks, and pre-commit checks: `mrs3-sync.md`.
 - [scripts/wch-mrs3.ps1](scripts/wch-mrs3.ps1) — toolchain automation and IDE tool calls over MCP.
 - [MRS3 skill catalog](references/mrs3-skill-catalog.md) — distilled prompts, the 8 skills, IDE tool surface, runtime config.
 - [MRS3 sync methodology](references/mrs3-sync.md) — payload anatomy, drift procedure, recovery when the layout changes.
-- `references/mrs3/` — byte-exact mirror: `AGENTS.md`, `opencode.json`, `mcp.json`, `skills/**`, `_variant/**`.
+- `references/mrs3/` — payload mirror (profile path sanitized to `<user>`): `AGENTS.md`, `opencode.json`, `mcp.json`, `skills/**`, `_variant/**`.
 - `references/mrs3/mrs3-manifest.json` — version stamps and per-file SHA256.

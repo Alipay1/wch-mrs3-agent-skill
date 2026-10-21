@@ -2,7 +2,7 @@
 
 MRS3's agent is not a black box. It ships as a plain directory tree of Markdown
 prompts, JSON config and skill folders, so the honest way to track it is a
-**byte-exact mirror plus a hash baseline** — not re-reading minified JavaScript
+**mirror plus a hash baseline** — not re-reading minified JavaScript
 every release.
 
 Everything below is implemented by `scripts/sync-mrs3-agent.ps1`.
@@ -25,9 +25,18 @@ Everything below is implemented by `scripts/sync-mrs3-agent.ps1`.
 | `%USERPROFILE%\.config\opencode\opencode.json` | User override, may contain a **plaintext API key** |
 | `node_modules\` | Irrelevant to prompt content |
 
-Vendored files must stay **byte-exact**. Do not hand-edit anything under
-`references/mrs3/` — the manifest hashes would stop meaning anything. All
-interpretation belongs in `mrs3-skill-catalog.md`.
+Vendored files stay byte-exact **except for one documented substitution**: the
+local user segment of the profile path is rewritten to `<user>`. Upstream bakes
+`C:\Users\<name>` into `skills.paths` in two config files, and a mirror that
+carries the author's account name is neither portable nor publishable. The script
+applies the substitution on **both sides** — when writing the mirror and when
+hashing the live payload — so `-Action Check` keeps its meaning across machines.
+
+Everything else is copied byte-for-byte, including a file's original mixed line
+endings (`.gitattributes` marks `references/mrs3/**` as `-text` so git never
+normalizes them). Do not hand-edit anything under `references/mrs3/`; the manifest
+hashes would stop meaning anything. All interpretation belongs in
+`mrs3-skill-catalog.md`.
 
 ---
 
